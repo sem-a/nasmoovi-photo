@@ -1,0 +1,308 @@
+@import "null";
+
+// font-family: 'Didact Gothic', sans-serif;
+// font-family: 'Courier Prime', monospace;
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+.block__anim {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+}
+.block {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+}
+.block__logo {
+    padding-top: 2.5%;
+    width: 30%;
+    margin: 0 auto;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+.logo__up {
+    h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 10px;
+    }
+}
+.logo__down {
+    p {
+        font-family: 'Courier Prime', monospace;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+}
+
+.block__menu {
+    padding: 1.5% 0 1% 0;
+    margin: 0 auto;
+    font-family: 'Didact Gothic', sans-serif;
+    width: 60%;
+}
+.item__burger {
+  display: none;
+}
+.menu__items {
+    display: flex;
+    justify-content: center;
+}
+.item {
+    padding: 0 3% 0 3%;
+    margin-right: 10px;
+    a {
+        text-decoration: none;
+        color: rgba(70, 69, 83, 1);
+        letter-spacing: 5px;
+        font-size: 14px;
+        text-align: center;
+        &:hover {
+            color:  rgba(70, 69, 83, 0.5);
+        }
+    }
+}
+
+
+
+
+//слайды 
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 0 auto;
+  height: 600px; 
+  img {
+    margin: 0 auto;
+    width: 100%;
+    padding: 2% 0 2% 0;
+  }
+}
+
+.block {
+  .block__photo {
+    display: flex;
+    justify-content: center;
+  }
+  .block__line {
+    margin: 2% auto;
+    border-top: 0.5px  rgba(70, 69, 83, 0.5) solid;
+  }
+  .block__down {
+    padding: 2% 0 5% 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 5px;
+    p {
+      text-decoration: none;
+      color: rgba(70, 69, 83, 1);
+    }
+  }
+  .block__title {
+    padding: 2% 0 2% 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 5px;
+    a {
+      text-decoration: none;
+      color: rgba(70, 69, 83, 1);
+      &:hover {
+        color: rgba(70, 69, 83, 0.5);
+      }
+    }
+  }
+}
+.block__photo {
+  .photo__item {
+    width: 250px;
+    height: 300px;
+    padding: 0 10px;
+    img {
+      width: 100%;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+// Анимация
+.block__anim {
+  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+  transition: 1s; /*Скорость перехода состояния элемента*/
+  animation: show 2s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 0.5s; /* Задержка перед началом */
+}
+.slide__anim {
+  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+  transition: 1s; /*Скорость перехода состояния элемента*/
+  animation: show 2s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 0.5s; /* Задержка перед началом */
+}
+
+@keyframes show{
+  0%{
+  opacity:0;
+  }
+  100% {
+  opacity:1;
+  }
+  }
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+    height: 250px; 
+  }
+  .block__logo {
+    padding-top: 2%;
+    width: 50%;
+    margin: 0 0 0 0;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+  }
+  .logo__up {
+    h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+  }
+  .logo__down {
+    p {
+      margin: 0 0 0 0;
+      font-family: 'Courier Prime', monospace;
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+  }
+  .menu__items {
+    display: none;
+  }
+  .item__burger {
+    display: block;
+    i {
+      font-size: 30px;
+      margin: 0 0 0 0;
+      position: absolute;
+      right: 3%;
+      top: 1.5%;
+    }
+  }
+
+  
+.block {
+  .block__photo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .block__line {
+    margin: 2% auto;
+    border-top: 0.5px  rgba(70, 69, 83, 0.5) solid;
+  }
+  .block__down {
+    padding: 2% 0 5% 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 5px;
+    p {
+      text-decoration: none;
+      color: rgba(70, 69, 83, 1);
+    }
+  }
+  .block__title {
+    padding: 1% 0 2% 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 5px;
+    a {
+      text-decoration: none;
+      color: rgba(70, 69, 83, 1);
+      &:hover {
+        color: rgba(70, 69, 83, 0.5);
+      }
+    }
+  }
+  
+  
+  .block__photo {
+    margin: 0 auto;
+    .photo__item {
+      margin: 0 auto;
+      width: 200px;
+      height: 250px;
+      img {
+        width: 100%;
+        &:hover {
+        opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .block__logo {
+    padding-top: 2%;
+    width: 50%;
+    margin: 0 0 0 0;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+  }
+  .logo__up {
+    h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+  }
+  .logo__down {
+    p {
+      margin: 0 0 0 0;
+      font-family: 'Courier Prime', monospace;
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+  }
+  .menu__items {
+    display: none;
+  }
+  .item__burger {
+    display: block;
+    i {
+      font-size: 24px;
+      margin: 0 0 0 0;
+      position: absolute;
+      right: 3%;
+      top: 1.5%;
+    }
+  }
+}
