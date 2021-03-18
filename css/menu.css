@@ -1,0 +1,211 @@
+@charset "UTF-8";
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.block__anim {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.block {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.block__logo {
+  padding-top: 2.5%;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.block__logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo__up h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+
+.logo__down p {
+  font-family: 'Courier Prime', monospace;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.block__menu {
+  padding: 1.5% 0 1% 0;
+  margin: 0 auto;
+  font-family: 'Didact Gothic', sans-serif;
+  width: 60%;
+}
+
+
+
+.menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item {
+  padding: 0 3% 0 3%;
+  margin-right: 10px;
+}
+
+.item a {
+  text-decoration: none;
+  color: #464553;
+  letter-spacing: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.item a:hover {
+  color: rgba(70, 69, 83, 0.5);
+}
+
+.block .block__down {
+  padding: 15% 0 5% 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 5px;
+}
+
+.block .block__down p {
+  text-decoration: none;
+  color: #464553;
+}
+
+.block__anim {
+  opacity: 0;
+  /*Элемент полностью прозрачный (невидимый)*/
+  -webkit-transition: 1s;
+  transition: 1s;
+  /*Скорость перехода состояния элемента*/
+  -webkit-animation: show 2s 1;
+  animation: show 2s 1;
+  /* Указываем название анимации, её время и количество повторов*/
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  /* Чтобы элемент оставался в конечном состоянии анимации */
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  /* Задержка перед началом */
+}
+
+.slide__anim {
+  opacity: 0;
+  /*Элемент полностью прозрачный (невидимый)*/
+  -webkit-transition: 1s;
+  transition: 1s;
+  /*Скорость перехода состояния элемента*/
+  -webkit-animation: show 2s 1;
+  animation: show 2s 1;
+  /* Указываем название анимации, её время и количество повторов*/
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  /* Чтобы элемент оставался в конечном состоянии анимации */
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  /* Задержка перед началом */
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#Go_Top {
+  width: 50px;
+  height: 50px;
+  position: fixed; 
+  bottom: 25px; 
+  right: 15px; 
+  cursor: pointer;
+}
+#Go_Top:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1250px) {
+  #Go_Top {
+    width: 40px;
+    height: 40px;
+    right: 8px; 
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .block__logo {
+    padding-top: 2.5%;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .logo__up h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin: 0 auto;
+  }
+
+  .logo__down p {
+    font-family: "Courier Prime", monospace;
+    margin: 0 auto;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  .block__menu {
+    margin: 0 auto;
+  }
+  .menu__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .item a {
+    text-decoration: none;
+    color: #464553;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .item {
+    padding: 0 0 0 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  #item__obj {
+    display: none;
+  }
+  .block__down p{
+    margin: 50px 0 0 0;
+  }
+}

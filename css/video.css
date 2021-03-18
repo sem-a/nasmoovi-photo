@@ -1,0 +1,32 @@
+/* No CSS */
+
+.flex__video {
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    margin: 0 30px;
+}
+
+.video iframe {
+    display: block;
+    margin: 70px 0 0 0;
+}
+
+@media screen and (max-width:1250px) {
+    .flex__video {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .video {
+        margin: 30px 0;
+    }
+    .video iframe {
+        width: 300px;
+        height: 169px;
+        display: block;
+        margin: 0 auto;
+    }
+}

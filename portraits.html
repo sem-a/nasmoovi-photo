@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>portraits portfolio - nasmoovi</title>
+
+    <link rel="icon" href="https://sema21.ru/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://sema21.ru/favicon.ico" type="image/x-icon">
+
+    <meta name="description" content="Портретная качественная съемка любого возраста, любые позы. Все обговариваем заранее: внешний вид, студию и тому подобное">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="nasmoovi">
+    <meta property="og:title" content="Фотограф СПб/Гатчина">
+    <meta property="og:description" content="Фотограф СПб. Студийные, свадебные, детские, индивидуальные съемки. Качественная обработка фотографий за короткий срок">
+    <meta property="og:url" content="https://sema21.ru">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="img/slaid_1.jpg">
+    <meta property="og:image:width" content="968">
+    <meta property="og:image:height" content="504">
+
+    <meta name="keywords" content="фотограф, СПб, Санкт-петербург, съемки, свадебный фотограф, индивидуальные съемки, свадьба, мероприятие, тематические съемки">
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/portraits.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2dbdc418ef.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="block__anim">
+            <div class="block__logo">
+                <a href="index.html">
+                    <div class="logo__up"><h2>nasmoovi</h2></div>
+                    <div class="logo__down"><p>photo & video</p></div>
+                </a>
+            </div> 
+        </div>
+        <div class="block__anim">
+            <div id="menu" class="block__menu">
+                <ul id="items" class="menu__items">
+                    <li id="item" class="item">
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li id="item__obj" class="item">•</li>
+                    <li id="item" class="item">
+                        <a href="events.html">EVENTS</a>
+                    </li>
+                    <li id="item__obj" class="item">•</li>
+                    <li id="item" class="item">
+                        <a href="portraits.html">PORTRAITS</a>    
+                    </li>
+                    <li id="item__obj" class="item">•</li>
+                    <li id="item" class="item">
+                        <a href="video.html">VIDEO</a>
+                    </li>
+                    <li id="item__obj" class="item">•</li>
+                    <li id="item" class="item">
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+        <div class="block__anim">
+            <div class="block__photo">
+                <div class="photo__rigth">
+                    <div class="photo">
+                        <a href="pages/ekaterina.html"><img src="pages/img/ekaterina/ekaterina_1.jpg" alt=""></a>
+                        <p class="signature">Ekaterina</p>
+                    </div>
+                    <div class="photo">
+                        <a href="pages/katy.html"><img src="pages/img/katy/katy_1.jpg" alt=""></a>
+                        <p class="signature">Katrin</p>
+                    </div>
+                </div>
+                <div class="photo__left">
+                    <div class="photo">
+                        <a href="pages/nastya.html"><img src="pages/img/nastya/nastya_1.jpg" alt=""></a>
+                        <p class="signature">Nastya</p>
+                    </div>
+                    <div class="photo">
+                        <a href="pages/vika.html"><img src="pages/img/vika/vika_1.jpg" alt=""></a>
+                        <p class="signature">Viktoria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+        <div class="block">
+            <div class="block__down">
+                <p>nasmoovi</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $.fn.scrollToTop = function() {
+                $(this).hide();
+                if ($(window).scrollTop() >= 250) $(this).fadeIn("slow")
+                var scrollDiv = $(this);
+            $(window).scroll(function() {
+                if ($(window).scrollTop() <= 250) $(scrollDiv).fadeOut("slow")
+                else $(scrollDiv).fadeIn("slow")
+            });
+            $(this).click(function() {
+                $("html, body").animate({scrollTop: 0}, "slow")
+                })
+            }
+        });
+        
+        $(function() {
+            $("#Go_Top").scrollToTop();
+        });
+    </script>
+
+<img src="img/ui.totop.png" alt="Наверх" title="Наверх" id="Go_Top">
+
+</body>
+</html>
